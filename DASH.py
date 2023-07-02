@@ -809,7 +809,7 @@ def init_DASH(args, train_node_auto_start=True, **overrides) -> MPI:
             raise ValueError(f"Unexpected key: {key}")
     
     args_dict.update(overrides)    
-    training_master_address = args_dict['training_master_address']
+    training_master_address = args_dict['training_master_addr']
     training_master_port = args_dict['training_master_port']
     total_epochs = args_dict['total_epochs']
     save_period = args_dict['save_period']
